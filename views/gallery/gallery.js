@@ -2,7 +2,7 @@ app.controller('ImagesCtrl', ['$scope', '$q', '$compile', '$window', '$http',
 	function ($scope, $q, $compile, $window, $http) {
 		$scope.getData = function (searchField) {
 			$scope.loading = true;
-			$http.jsonp("http://www.flickr.com/services/feeds/photos_public.gne?tags=" + searchField + "&format=json&jsoncallback=JSON_CALLBACK").success(function (data) {
+			$http.jsonp("https://www.flickr.com/services/feeds/photos_public.gne?tags=" + searchField + "&format=json&jsoncallback=JSON_CALLBACK").success(function (data) {
 				$scope.link = data.link;
 				$scope.images = data.items;
 				$scope.loading = false;
