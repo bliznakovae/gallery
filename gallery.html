@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app" manifest="manifest.appcache" ng-controller="MainCtrl">
+
+<head>
+    <title>Formula 1</title>
+    <link rel="stylesheet" href="styles/bootstrap.min.css" />
+    <link rel="stylesheet" href="styles/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="styles/bootstrap.min.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <script type="text/javascript" src="lib/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="lib/bootstrap.min.js"></script>
+    <script type="text/javascript" src="vendor/angular/angular.min.js"></script>
+    <script type="text/javascript" src="vendor/angular/angular-route.min.js"></script>
+    <script type="text/javascript" src="scripts/app.js"></script>
+    <script type="text/javascript" src="services/service.js"></script>
+    <script type="text/javascript" src="views/gallery/gallery.js"></script>
+    <script type="text/javascript" src="models/model.js"></script>
+    <script type="text/javascript" src="scripts/main.js"></script>
+</head>
+
+<body>
+    <div class="topnav" id="myTopnav">
+        <a href="#gallery">Gallery </a>
+        <a href="javascript:void(0);" class="icon" ng-click="myFunction()">&#9776;</a>
+    </div>
+    <div ng-view></div>
+</body>
+
+</html>
